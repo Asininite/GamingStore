@@ -1,0 +1,16 @@
+appsettings.json{
+    these are the files commonly used for configuration
+    represents set of configurations that could change across environments
+
+}
+
+Properties > launchSettings.json{
+    this provides profiles
+    there is http profile and https profile
+    environment variable is used to tell that we are working in a development and not production environment
+
+}
+
+dotnet build is used to build the project
+Ctrl + Shift + B works too
+

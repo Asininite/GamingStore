@@ -1,0 +1,35 @@
+GET http://localhost:5165/games
+// we can modify this to target the api
+
+###
+
+GET http://localhost:5165/games/3
+
+###
+
+POST http://localhost:5165/games
+Content-Type: application/json
+
+{
+    "name" : "Halo 5",
+    "genreId" : "1",
+    "price" : 60.0,
+    "releaseDate" : "2012-11-06"
+}
+// we are supposed to leave a empty line after Content-Type 
+
+###
+
+PUT http://localhost:5165/games/3
+Content-Type: application/json
+
+{
+    "name" : "Halo 4 : Requiem",
+    "genre" : "Sci-Fi",
+    "price" : 60.0,
+    "releaseDate" : "2012-11-06"
+}
+
+### 
+
+DELETE http://localhost:5165/games/2
