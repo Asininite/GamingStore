@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using GameStore.api.Dtos;
 using GameStore.api.Entities;
 
@@ -32,9 +29,8 @@ namespace GameStore.api.Mapping
                 game.ReleaseDate
             );
         }
-    }
 
-    public static GameDetailsDto ToGameDetailsDto(this Game game)
+        public static GameDetailsDto ToGameDetailsDto(this Game game)
         {
             return new
             (
@@ -45,4 +41,7 @@ namespace GameStore.api.Mapping
                 game.ReleaseDate
             );
         }
+    }
+
+    
 }
